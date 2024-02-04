@@ -9,5 +9,6 @@ parradfo.innerHTML = 'Indica un numero del uno al 10'
 
 
 function intento () {
+alert('si funciona la funcion!')
 
 }
