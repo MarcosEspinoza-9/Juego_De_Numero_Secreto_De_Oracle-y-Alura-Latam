@@ -22,13 +22,20 @@ console.log(elementoHTML==numeroSecretro);
 */
 
     if (elementoHTML==numeroSecretro) {
-     let adivinaste = document.querySelector('h1');
-        adivinaste.innerHTML = "¡ADIVINASTE!" 
+     let adivinaste = document.querySelector('p');
+        adivinaste.innerHTML = "¡FELICIDADES LO ADIVINASTE!" 
     } else {
-        alert('¡PERDISTE :( !')
+       if (elementoHTML> numeroSecretro) {
+            asignarTextoElemento('p',"El numero secreto es menor")   
+        } else {
+            asignarTextoElemento('p',"El numero secreto es mayor")   
+        }
+       }
+       return;
     }
 
-}
+
+
 
 
 //Funcion para hacer numeros aleatorios
