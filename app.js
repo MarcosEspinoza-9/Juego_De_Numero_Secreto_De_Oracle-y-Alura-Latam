@@ -26,6 +26,10 @@ console.log(elementoHTML==numeroSecretro);
     let adivinaste = document.querySelector("p");
     //operador ternario es cuando evaluamos en una sola linea (if,else) por ejemplo al final de la linea de abajo
     adivinaste.innerHTML = `¡FELICIDADES LO ADIVINASTE EN ${intentos} ${(intentos === 1 ? 'VEZ' : 'VECES!')} `;
+
+    //se busca el boton por id y se habilita cuando el usuario adivina el numero(cambia de color de gris a azul)
+    document.getElementById('reiniciar').removeAttribute('disabled');
+
   } else {
     //EL USUARIO NO ACERTO
     if (elementoHTML > numeroSecretro) {
@@ -41,7 +45,7 @@ console.log(elementoHTML==numeroSecretro);
 
 
 function limpiar() {
-   valorCaja = document.querySelector('#elementoHTML'). valorCaja.value = '';
+  document.querySelector('#intentoUsuario').value = ' ';
 }
 
 
