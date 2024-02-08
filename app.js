@@ -70,7 +70,7 @@ function reiniciarjuego() {
 
 
 }
-
+//! Funcion que reinicia todo a su forma inicial
 function condicionesIniciales() {
   asignarTextoElemento("h1", "Juego del numero Secreto!");
   asignarTextoElemento("p", "Indica un numero del 1 al 10");
